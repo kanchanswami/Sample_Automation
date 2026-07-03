@@ -21,7 +21,3 @@ def check_url(username='admin', password='admin'):
 #check_url(username='stepup', password='admin')
 #check_url(username='admin', password='password@123')
 #check_url(username='stepup', password='password@123')
-
-//*[@id="APjFqb"]
-
-page.get_by_role(combobox, name="search")
