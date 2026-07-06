@@ -34,7 +34,7 @@ jobs:
 
       - name: Run Playwright tests
         run: |
-          pytest --tracing=retain-on-failure
+          pytest -v
 
       - name: Upload Playwright traces
         if: always()

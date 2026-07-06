@@ -2,15 +2,15 @@ import pytest
 
 def pytest_addoption(parser):
     parser.addoption(
-        "--browser",
+        "--mybrowser",
         action="store",
         default="chromium",
         help="Browser to run tests"
     )
 
-@pytest.fixture(scope="session")
+"""@pytest.fixture(scope="session")
 def browser_name(request):
-    return request.config.getoption("--browser")
+    return request.config.getoption("--browser")"""
 
 @pytest.fixture()
 def setup():
