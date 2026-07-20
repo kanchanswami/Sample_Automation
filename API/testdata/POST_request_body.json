@@ -1,0 +1,11 @@
+{
+"firstname": "kanchan",
+"lastname": "s",
+"totalprice": 111,
+"depositpaid": true,
+"bookingdates": {
+"checkin": "2015-01-01",
+"checkout": "2015-03-01"
+},
+"additionalneeds": "Breakfast"
+}
