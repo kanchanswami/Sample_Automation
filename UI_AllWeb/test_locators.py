@@ -23,6 +23,8 @@ from playwright.sync_api import Page, expect
 import time
 import re
 
+from pytest_playwright.pytest_playwright import page
+
 def test_logo(page: Page):
     page.goto("https://practicetestautomation.com/")
 
@@ -61,6 +63,8 @@ def test_orangeHRM(page: Page):
     page.get_by_placeholder("Username").fill("Admin")
     page.get_by_placeholder("Password").fill("admin123")
     page.get_by_role("button", name="Login").click()
+    print("URL:", page.url)
+    print("TITLE:", page.title())
     
 
 

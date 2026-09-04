@@ -1,6 +1,7 @@
+python 3.9.6
 python-dotenv
-pytest
-playwright
+pytest 8.4.2
+playwright 0.7.1
 pytest-playwright
 pytest-xdist
 pytest-html
