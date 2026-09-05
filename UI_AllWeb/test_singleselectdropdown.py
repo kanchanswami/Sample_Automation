@@ -1,6 +1,7 @@
 from playwright.sync_api import Page, expect
+import pytest
 
-
+@pytest.mark.skip(reason="Public site is blocked by Google in GitHub Actions")
 def test_singleselectdropdown(page:Page):
     page.goto("https://testautomationpractice.blogspot.com/")
     #3 ways to select dropdown

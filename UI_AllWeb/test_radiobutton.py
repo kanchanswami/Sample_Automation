@@ -1,5 +1,7 @@
 from playwright.sync_api import Page, expect
+import pytest
 
+@pytest.mark.skip(reason="Public site is blocked by Google in GitHub Actions")
 def test_radiobutton(page:Page):
     page.goto("https://testautomationpractice.blogspot.com/")
     male_radio = page.locator("input#male")

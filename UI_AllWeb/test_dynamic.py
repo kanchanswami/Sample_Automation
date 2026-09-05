@@ -1,5 +1,8 @@
 from playwright.sync_api import Page, expect
 import re
+import pytest
+
+@pytest.mark.skip(reason="Public site is blocked by Google in GitHub Actions")
 def test_dynamic(page:Page):
     page.goto("https://testautomationpractice.blogspot.com/", timeout=60000)
 

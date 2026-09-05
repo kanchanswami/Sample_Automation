@@ -1,0 +1,13 @@
+python
+python-dotenv
+pytest
+playwright
+pytest-playwright
+pytest-xdist
+pytest-html
+allure-pytest
+pytest-rerunfailures
+openpyxl
+faker
+python-slugify
+jsonschema
