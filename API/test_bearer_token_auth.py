@@ -1,10 +1,11 @@
 import os
 from dotenv import load_dotenv
 from playwright.sync_api import Playwright
+import pytest
 
 load_dotenv()
 
-
+@pytest.mark.skip(reason="GitHub token not configured")
 def test_bearer_token_auth(playwright: Playwright):
 
     token = os.getenv("GITHUB_TOKEN")

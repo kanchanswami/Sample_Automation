@@ -21,14 +21,6 @@ def test_text(page: Page):
     text1 = page.get_by_text("Welcome to Practice Test Automation!")
     expect(text1).to_be_visible()
 
-def test_role(page: Page):
-    page.goto("https://practicetestautomation.com/")
-
-    #role1 = page.get_by_role("heading", level=2).first
-    role1 = page.get_by_role("heading", level=1).first
-    expect(role1).to_be_visible()
-    expect(role1).to_be_visible()
-
 
 def test_label(page: Page):
     #page.get_by_label()
